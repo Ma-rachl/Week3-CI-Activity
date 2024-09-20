@@ -3,10 +3,10 @@ name: ci
 on:
   push:
     branches:
-      - main
+      - josie
   pull_request:
     branches:
-      -main
+      - josie
   workflow_dispatch:
   
 jobs:
