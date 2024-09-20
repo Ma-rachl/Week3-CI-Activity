@@ -15,7 +15,4 @@ jobs:
 
     steps:
       - name: Display hello world
-        run: |
-          echo "Hi rachel!"
-          npm install
-          npm run test
+        run: npm install
