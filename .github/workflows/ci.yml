@@ -1,0 +1,21 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - main
+  pull:
+    branches:
+      - main
+
+jobs:
+  Test:
+    runs-on: ubuntu-latest
+    when: manual
+
+    steps:
+      - name: Display Test
+        run: echo "This is a test"
+        run: npm install
+        run: npm run test
+
