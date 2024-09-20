@@ -25,6 +25,3 @@ jobs:
 
       - name: tests
         run: npm run test
-
-      - name: zip files
-        run: npm zip
