@@ -7,12 +7,21 @@ on:
   pull_request:
     branches:
       - main
-
+  workflow_dispatch:  
 
 jobs:
   ci:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Display hello world
+      - name: Checkout code
+        uses: actions/checkout@v3
+        
+      - name: Install OS dependencies
+        run: sudo apt-get update && sudo apt-get install -y <list_of_os_dependencies>
+
+      - name: Install npm dependencies
         run: npm install
+
+      - name: Run tests
+        run: npm test
