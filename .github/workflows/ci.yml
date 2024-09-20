@@ -3,10 +3,10 @@ name: CI
 on:
   push:
     branches:
-      - main
+      - armina-test
   pull_request:
     branches:
-      - main
+      - armina-test
   workflow_dispatch:  
 
 jobs:
